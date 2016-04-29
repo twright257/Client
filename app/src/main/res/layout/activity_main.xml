@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Message"
+        android:singleLine="true">
+    </EditText>
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Send" >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/connectButton"
+        android:onClick="onClick" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forward"
+            android:id="@+id/forwardButton"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:clickable="false"
+            android:onClick="onClick" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reverse"
+            android:id="@+id/reverseButton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="61dp"
+            android:onClick="onClick" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/stopButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClick" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:id="@+id/rightButton"
+            android:layout_alignTop="@+id/stopButton"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:id="@+id/leftButton"
+            android:layout_alignTop="@+id/stopButton"
+            android:layout_alignParentStart="true"
+            android:onClick="onClick" />
+
+    </RelativeLayout>
+
+</LinearLayout>
